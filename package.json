@@ -1,0 +1,42 @@
+{
+  "name": "timvel-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node js/config/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ali-oss": "^6.0.1",
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "coordtransform": "^2.1.2",
+    "express": "^4.16.3",
+    "leancloud-realtime": "^4.2.0",
+    "leancloud-storage": "^3.10.0",
+    "lodash": "^4.17.5",
+    "marked": "^0.6.1",
+    "moment": "^2.22.2",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "ramda": "^0.26.1",
+    "rxjs": "^6.3.3",
+    "rxjs-compat": "^6.3.3",
+    "sequelize": "^4.37.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-react": "^7.11.1"
+  }
+}

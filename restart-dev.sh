@@ -1,0 +1,1 @@
+ssh root@timvel-hk-1 docker restart timvel-server

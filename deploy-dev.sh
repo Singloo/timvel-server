@@ -1,0 +1,1 @@
+rsync -avzP * root@timvel-hk-1:/apps/timvel-server
