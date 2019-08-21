@@ -21,8 +21,8 @@ app.use('/', express.static(path.join(__dirname, '/../../build')));
 app.get('/', (req, res) => {
   res.send(homeHtml);
 });
-app.get('/aboutme', (req, res) => {
-  res.send(AboutMeMD);
+app.get('/aboutMe', (req, res) => {
+  res.send(homeHtml);
 });
 app.get('/privacy', (req, res) => {
   res.send(PrivacyMD);
