@@ -1,4 +1,8 @@
 
+## 等待重构
+
+
+
 #### Instal docker on Ubuntu
 
 ```
@@ -28,7 +32,3 @@ docker run -d \
   -v /apps/timvel-server/nginx.conf:/etc/nginx/nginx.conf:ro \
   --restart always \
   nginx
-#### run postgres
-docker run --name timvel-db -e POSTGRES_PASSWORD=asdasdasd -e POSTGRES_USER=asdasd -e POSTGRES_DB=timvel -d -p 5432:5432 --restart always mdillon/postgis
-
-<!-- docker run --name timvel-wx-db -e POSTGRES_PASSWORD=MYQ88*ten -e POSTGRES_USER=origami -e POSTGRES_DB=timvel-db -d -p 5432:5432 --restart always mdillon/postgis -->
