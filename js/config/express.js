@@ -10,6 +10,35 @@ import wx from '../api/wxApp';
 import Ai from '../ai/api';
 const app = express();
 const homeHtml = fs.readFileSync(__dirname + '/../../build/index.html', 'utf8');
+const MONITOR_CONFIG = {
+  title: 'Timvel status', // Default title
+  theme: 'default.css', // Default styles
+  path: '/status',
+  spans: [
+    {
+      interval: 1, // Every second
+      retention: 60, // Keep 60 datapoints in memory
+    },
+    {
+      interval: 5, // Every 5 seconds
+      retention: 60,
+    },
+    {
+      interval: 15, // Every 15 seconds
+      retention: 60,
+    },
+  ],
+  chartVisibility: {
+    cpu: true,
+    mem: true,
+    load: true,
+    responseTime: true,
+    rps: true,
+    statusCodes: true,
+  },
+  healthChecks: [],
+  ignoreStartsWith: '/admin',
+};
 app.use(bodyParser.json({ limit: '3mb' }));
 app.use(
   bodyParser.urlencoded({
@@ -21,6 +50,7 @@ app.use('/', express.static(path.join(__dirname, '/../../build')));
 app.get('/', (req, res) => {
   res.send(homeHtml);
 });
+app.use(require('express-status-monitor')(MONITOR_CONFIG));
 app.get('/aboutMe', (req, res) => {
   res.send(homeHtml);
 });
