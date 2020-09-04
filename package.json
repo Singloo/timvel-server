@@ -26,7 +26,7 @@
     "leancloud-realtime": "^4.2.0",
     "leancloud-storage": "^3.10.0",
     "lodash": "^4.17.5",
-    "marked": "^0.6.1",
+    "marked": "^0.7.0",
     "moment": "^2.22.2",
     "pg": "^7.4.1",
     "pg-hstore": "^2.3.2",
