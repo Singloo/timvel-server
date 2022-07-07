@@ -27,7 +27,7 @@
     "leancloud-storage": "^3.10.0",
     "lodash": "^4.17.5",
     "marked": "^0.6.1",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "pg": "^7.4.1",
     "pg-hstore": "^2.3.2",
     "ramda": "^0.26.1",
